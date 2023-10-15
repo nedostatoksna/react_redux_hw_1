@@ -9,9 +9,9 @@ const UserCard = () => {
     return (
         <>
         <div className={style.user_info}>
-                <p className={user.userName ? style.p_info : null}>{user.userName}</p>
-                <p className={user.email ? style.p_info : null}>{user.email}</p>
-                <p className={style.p_info}>{user.isAdmin ? "this user is an admin" : "this user isn't an admin"}</p>
+                <p className={user.userName && style.p_info }>{user.userName}</p>
+                <p className={user.email && style.p_info }>{user.email}</p>
+                <p className={user.isAdmin && style.p_info}>{(user.isAdmin) && (user.isAdmin && "this user is an admin" )}</p>
         </div>
         </>
     )

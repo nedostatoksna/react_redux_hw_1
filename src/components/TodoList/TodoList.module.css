@@ -6,12 +6,15 @@
     margin: auto auto;
 }
 .todo_wrapper {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 .user_info {
     padding: 20px 10px;
     margin-right: 20px;
+    min-width: 200px;
     font-size: 12px;
     font-family: "DM_Sans";
     font-style: italic;
@@ -23,9 +26,11 @@
     font-family: "DM_Sans";
 }
 .header {
+    width: 200px;
+    margin: 20px auto 5px auto;
+    text-align: center;
     font-family: "DM_Sans";
     font-size: 25px;
-    margin: 10px auto 30px auto;
 }
 .task_btn {
     border: none;

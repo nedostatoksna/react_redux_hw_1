@@ -10,21 +10,22 @@ const TodoList = () => {
     const todos = useSelector(state => state.reducer_1.todos);
 
     return (
-        <div className={style.section}>
-            <UserCard />
-            <div className={style.todo_wrapper}>
-                <h1 className={style.header}>Todo</h1>
-                <CreateTodo />
-                <ul className={style.list}>
-                    {
-                        todos.map(todo => (
-                        <Todo todo={todo} key={todo.id} />
-                        ))
-                    }
-                </ul>
+        <>
+            <h1 className={style.header}>Todo</h1>
+            <div className={style.section}>
+                <UserCard />
+                <div className={style.todo_wrapper}>
+                    <CreateTodo />
+                    <ul className={style.list}>
+                        {
+                            todos.map(todo => (
+                            <Todo todo={todo} key={todo.id} />
+                            ))
+                        }
+                    </ul>
+                </div>
             </div>
-        </div>
-        
+        </>
     )
 };
 
