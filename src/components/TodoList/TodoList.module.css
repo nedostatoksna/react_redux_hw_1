@@ -1,0 +1,89 @@
+.section {
+    width: 600px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+}
+.todo_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.user_info {
+    padding: 20px 10px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-family: "DM_Sans";
+    font-style: italic;
+}
+.p_info {
+    background-color: #8a8aff;
+    color: white;
+    padding: 3px 3px;
+    font-family: "DM_Sans";
+}
+.header {
+    font-family: "DM_Sans";
+    font-size: 25px;
+    margin: 10px auto 30px auto;
+}
+.task_btn {
+    border: none;
+    cursor: pointer;
+    margin: 5px 5px;
+    min-height: 30px;
+    min-width: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: "DM_Sans";
+}
+.task_btn:hover {
+    background:  #5f5ffb;
+    color: white;
+}
+.task_inner_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 10px;
+}
+.checked {
+    color: #5f5ffb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 10px;
+    text-decoration: line-through;
+}
+.task_box {
+    display: flex;
+    flex-direction: row;
+    font-family: "DM_Sans";
+    padding: 15px 5px;
+}
+.checkbox {
+    margin: 3px 10px;
+}
+.input_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input {
+    font-size: 16px;
+    font-family: "DM_Sans";
+    padding: 10px;
+    border: none;
+    background:#e9ecef;
+    height: 40px;
+    margin-left: 10px;
+}
+.create_wrapper {
+    font-family: "DM_Sans";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list {
+    width: 350px;
+}
